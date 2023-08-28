@@ -1,0 +1,758 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dubai;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    background: #f6f6f9;
+
+}
+
+
+.full {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: hsla(186, 25%, 77%, 1);
+}
+
+::-webkit-scrollbar-thumb{
+    background: hsla(186, 25%, 77%, 1);
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+   height:100vw;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+   
+    box-shadow: 0 0 5px rgba(0,0,0,.1),0 0 10px rgba(0,0,0,.1),0 0 15px rgba(0,0,0,.2);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+  
+}
+.container .left{
+    position: relative;
+    width:250px;
+    height:100vh;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.container .left header{
+    position: relative;
+    width: 100%;
+}
+
+.container .left header .logo{
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container .left header .logo h2{
+    font-size: 1.4em;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+}
+
+
+.container .left header .logo .close{
+    position: relative;
+    left: -20px;
+    width:20px;
+     height: 20px;
+     text-align: center;
+     line-height: 20px;
+     cursor: pointer;
+     display: none;
+}
+.container .left header nav{
+    position: relative;
+    padding: 20px 20px 0 20px;
+}
+.container .left header nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .left header nav ul li{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+  
+    list-style: none;
+}
+
+.container .left header nav ul li a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+   text-decoration: none;
+   padding-left: 20px;
+   
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .3 ease;
+}
+
+.container .left header nav ul li:nth-child(4) a,
+.container .left header nav ul li a:hover{
+    background: #f1f3ff;
+    transition: 0s;
+}
+
+.container .left header nav ul li a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: 0.3s ease;
+    background: #7d8ae6;
+
+}
+
+.container .left header nav ul li:nth-child(4) a::before,
+.container .left header nav ul li a:hover::before{
+    width: 4px;
+}
+
+
+.container .left header nav ul li a .material-symbols-outlined{
+    color: #999;
+    font-size: 1.7em;
+    margin-right: 10px;
+
+}
+
+
+.container .left header nav ul li a .title{
+    color: #999;
+    font-size: 1.1em;
+   
+
+}
+.container .left header nav ul li:nth-child(4) a .material-symbols-outlined,
+.container .left header nav ul li:nth-child(4) a .title,
+.container .left header nav ul li a:hover .material-symbols-outlined,
+.container .left header nav ul li a:hover .title{
+    color: #6577ff;
+}
+
+
+
+.container .left .side-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .left .side-menu .log{
+position: relative;
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items:center;
+
+
+list-style: none;
+}
+
+.container .left .side-menu .log a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+   text-decoration: none;
+   padding-left: 20px;
+   
+   
+    transition: .3 ease;
+}
+
+.container .left .side-menu .log a:hover{
+    background: #f1f3ff;
+    transition: 0s;
+}
+
+
+.container .left .side-menu .log a .material-symbols-outlined{
+    color: #999;
+    font-size: 1.7em;
+    margin-right: 10px;
+
+}
+
+
+.container .left .side-menu .log  a .text{
+    color: #999;
+    font-size: 1.1em;
+   
+
+}
+
+.container .left .side-menu{
+    position: relative;
+    width: 100%;
+}
+
+.container .left .side-menu .log a:hover .material-symbols-outlined,
+.container .left .side-menu .log a:hover .text{
+    color: #000;
+}
+
+
+
+.container .right{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .right .top{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background: #fff;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+   border-radius: 10px;
+}
+
+.container .right .top .search8x{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .right .top .search8x h2{
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.container .right .top .search8x .input8x{
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background:#c2c8f8 ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.container .right .top .search8x .input8x span{
+    cursor: pointer;
+    color: #fffdfd;
+}
+
+
+.container .right .top .search8x .input8x input{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+    font-size: 1.1em;
+    color: #000;
+}
+
+.container .right .top .search8x .input8x span.searchClose{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.container .right .top .user{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .right .top .user span{
+    color: #000;
+    cursor: pointer;
+}
+
+.container .right .top .user .userImg{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.container .right .top .user .userImg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #fff ;
+    border-radius: 20px;
+}
+
+.container .right .top .user h2{
+    font-size: 1.1em;
+    line-height: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.container .right .top .user h2 span{
+    font-size: 0.8em;
+   color: #999;
+    cursor: pointer;
+}
+
+.container .right .top .user .arrow{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right .top .user .arrow span{
+    color: #000;
+    font-size: 1.7em;
+    font-weight: 600;
+    transition: .3 ease;
+}
+
+.container .right .top .user .arrow:hover span{
+    transform: scale(1.2);
+}
+
+.container .right .top .user .toggle{
+    position: relative;
+    width: 40px;
+    width: 40px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+   display: none; 
+}
+
+.container .right .top .user .toggle span{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 800;
+    transition: .3s  ease, opacity 0s, visibility 0s;
+}
+
+.container .right .top .user .toggle:hover span {
+    transform: scale(1.1);
+}
+.container .right .top .user .toggle span:first-child{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container .right .top .user .toggle span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .right .top .user .toggle.active span:first-child {
+    opacity: 0;
+    visibility: hidden;
+}
+.container .right .top .user .toggle.active span:last-child {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* top end */
+
+
+
+
+/* Responsive */
+@media (max-width: 1176px) {
+    .container .left {
+        position: absolute;
+        left: -300px;
+        height: calc(100% - 5vh);
+        z-index: 11;
+        box-shadow: none;
+        transition: .5s ease;
+       
+    }
+    .container .left.active {
+        left: 20px;
+    }
+    .container .right.overlay::before {
+        content: '';
+        position: absolute;
+        background: rgba(0, 0, 0, .4);
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        border-radius: 20px;
+    }
+    .container .right .top .user .toggle {
+        display: block;
+    }
+
+    
+
+    
+}
+@media (max-width: 927px) {
+    .container {
+        height: 100%;
+        margin: 30px 0;
+    }
+    .container .left.active {
+        width: calc(100% - 40px);
+        height: calc(100vh - 55px);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .container .left header .logo .close {
+        display: block;
+    }
+    .container .right main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1.4fr 1.4fr 1.6fr 1.3fr 1fr 1.3fr;
+    }
+    .container .right main * {
+        grid-row: unset !important;
+        grid-column: unset !important;
+    }
+    .container .right .top .search8x h2 {
+        font-size: 1.2em;
+    }
+    .container .right .top .search8x .input8x {
+        width: 45px;
+        cursor: pointer;
+    }
+    .container .right .top .search8x.active {
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 45px;
+        background: #f8f2fe;
+        z-index: 10;
+        border-radius: 10px;
+    }
+    .container .right .top .search8x.active h2 {
+        display: none;
+    }
+    .container .right .top .search8x.active .input8x {
+        width: 100%;
+    }
+    .container .right .top .search8x.active .input8x input {
+        padding-right: 40px;
+    }
+    .container .right .top .search8x.active .input8x span.searchClose {
+        display: block;
+    }
+    .container .right .top .user {
+        gap: 10px;
+    }
+   
+}
+@media (max-width: 586px) {
+    .container .right .top .user .arrow {
+        display: none;
+    }
+    .container .right .top .user h2 {
+        display: none;
+    }
+    .myTodo{
+        width: 100%;
+        padding: 2em 3px;
+        margin-left: -11px;
+    }
+
+    .container1 .myTodo .edit{
+        width: 30px;
+    }
+
+    .container1 .myTodo .delete{
+        width: 30px;
+    }
+   
+    
+   
+   
+}
+
+
+
+
+
+
+
+.container1{
+    font-family:"Poppins",sans-serif;
+    width: min(95vw,45.25em);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 5.875em;
+    
+}
+
+.myTodo{
+    background: #fff;
+width: 100%;
+height: auto;
+    padding: 3em 2.5em;
+    border-radius: .8em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.inputvalue{
+    position: relative;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    gap: 1em;
+    
+
+}
+
+.inputvalue input {width: 100%;
+background: transparent;
+color: #111111;
+font-size: 0.9em;
+border: none;
+border-bottom: 2px solid #d1d3d4;
+padding: 1em 0.5em;
+}
+
+.inputvalue input:focus{
+    border-color: #90c2fa;
+    outline: none;
+
+}
+
+.inputvalue button{
+    position: relative;
+    border-radius: .5em;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #7f87e3 ;
+    border: none;
+    outline: none;
+    color: #f6fbfe;
+    cursor: pointer;
+}
+
+#tasks{
+    margin-top: 1em;
+    border-radius: .5em;
+    width: 100%;
+    position: relative;
+    padding: 1em 0.5em;
+}
+.task{
+    background: #f1f8fb;
+
+    margin-top: 1em;
+    padding: 0.8em 1em;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr ;
+    gap: 1em;
+    border-radius: .5em;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.05);
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+#error{
+   text-align: center; 
+   background: #fffdfd;
+  color:  #ff5c5c;
+  margin-top: 1.5em;
+  padding: 1em 0;
+  border-radius: .8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+}
+
+
+
+   
+.task input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #e1e1e1;
+}
+
+.task input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.task input[type="checkbox"]:checked{
+    background-color: rgb(17, 186, 17);
+    border-color:rgb(17, 186, 17);
+    
+}
+
+.task input[type="checkbox"]:checked::before{
+    position: absolute;
+    content: "\f00c";
+    color: #ffffff;
+    font-size: 0.8em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.task span{
+    font-size: 1em;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+
+
+
+.task button{
+    width: 100%;
+    color: #ffffff;
+    padding: 1em 0;
+    border-radius: .5em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.edit{
+    background-color: #0ab510;
+}
+
+
+.delete{
+    background-color: rgb(238, 7, 7);  
+}
+
+
+.completed{
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+
+.clearTask{
+   position: relative;
+   display: flex;
+   top: 20px;
+   left: 0;
+   right: 0;
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   color: #ffffff;
+   background-color: #919df8 ;
+   padding: 1em 0;
+   border-radius: .5em;
+   border: none;
+   cursor: pointer;
+   outline: none;
+}
+
+
+.edit-input{
+    background-color: #aec9e8;
+    padding: 1em 0.5em;
+    border: none;
+    outline: none;
+    border-radius: .5em;
+   width: 100%;
+}
+
+
+/* left */
+
+
+

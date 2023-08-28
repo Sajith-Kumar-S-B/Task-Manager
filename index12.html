@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project Timeline Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <header>
+                <div class="logo">
+                    <h2>Timeflow</h2>
+                    <div class="close">
+                        <span class="material-symbols-outlined">
+                            close
+                            </span>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#"><span class="material-symbols-outlined full">
+                                dashboard
+                                </span>
+                            <span class="title">Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="material-symbols-outlined">
+                                folder
+                                </span>
+                            <span class="title">Projects</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="material-symbols-outlined">
+                                group
+                                </span>
+                            <span class="title">My Clients</span></a>
+                        </li>
+                        <li>
+                            <a href="./index2.html"><span class="material-symbols-outlined">
+                                task
+                                </span>
+                            <span class="title">My Task</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="material-symbols-outlined">
+                                browse_activity
+                                </span>
+                            <span class="title">Activity</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="material-symbols-outlined">
+                                chat_bubble
+                                </span>
+                            <span class="title">Message</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <div class="side-menu">
+                <div class="log">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            settings
+                            </span>
+                        <span class="text">Settings</span>
+                    </a>
+                </div>
+                <div class="log">
+                    <a href="#" onclick="logout()" class="logout">
+                        <span class="material-symbols-outlined">
+                            logout
+                            </span>
+                        <span  class="text">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">
+                <div class="search8x">
+                    <h2>Dashboard</h2> 
+                   
+                   
+                    <div class="input8x">
+                        <span class="material-symbols-outlined searchOpen">
+                            search
+                            </span>
+                            <input type="text" placeholder="Search">
+                            <span class="material-symbols-outlined searchClose">
+                                close
+                                </span>
+                    </div>
+                </div>
+                <div class="user">
+                    <span class="material-symbols-outlined">
+                        notifications
+                        </span>
+                        <div class="userImg">
+                            <img src="./images/User-Profile-PNG-High-Quality-Image.png" alt="user">
+                        </div>
+                        <h2>Sajith <br><span>sajith@124</span></h2>
+                        <div class="arrow">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                                </span>
+                        </div>
+                        <div class="toggle">
+                            <span class="material-symbols-outlined">
+                                menu
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    close
+                                    </span>
+                        </div>
+                </div>
+            </div>
+            <main>
+                <!-- projectCard start -->
+                 <!-- projectCard start -->
+      <div class="projectCard">
+        <!-- projectTop start -->
+        <div class="projectTop">
+            <h2>ERP Implementation<br><span>ProdigyLogic</span></h2>
+            <div class="projectDots">
+                <span class="material-symbols-outlined">
+                    more_horiz
+                </span>
+            </div>
+        </div>
+        <!-- projectTop end -->
+        <!-- projectProgress start -->
+        <div class="projectProgress">
+            <div class="process fade-out">
+                <h2>In Progress</h2>
+            </div>
+            <div class="priority blinking-priority">
+                <h2>High Priority</h2>
+            </div>
+        </div>
+        <!-- projectProgress end -->
+        <!-- groupImg start -->
+        <div class="groupImg">
+            <a href="#">
+                <img src="./images/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg" alt="img1">
+            </a>
+            <a href="#" style="--left: -10px;">
+                <img src="./images/indian-man-smiling-cheerful-expression-closeup-portrait_53876-129387.avif" alt="img2">
+            </a>
+            <a href="#" style="--left: -20px;">
+                <img src="./images/stylish-handsome-indian-man-tshirt-pastel-wall_496169-1571.avif" alt="img3">
+            </a>
+            <a href="#" style="--left: -30px;">
+                <img src="./images/photo-1539571696357-5a69c17a67c6.jfif" alt="img4">
+            </a>
+            <a href="#" style="--left: -40px;">
+                <img src="./images/photo-1507003211169-0a1dd7228f2d.jfif" alt="img5">
+            </a>
+            <a href="#" style="--left: -50px;">
+                <span class="number">+3</span>
+            </a>
+        </div>
+        <!-- groupImg end -->
+        <!-- task start -->
+        <!-- task start -->
+        <div class="task">
+            <h2>Task Done: <strong id="taskDoneValue1">0</strong> / 50</h2>
+           
+            <div class="reference-line">
+                <div class="line-bar" id="lineBar1"></div>
+            </div>
+        </div>
+<!-- task end -->
+
+        <!-- task end -->
+        <!-- due start -->
+        <div class="due">
+            <h2>Due Date: 12 September</h2>
+        </div>
+        <!-- due end -->
+    </div>
+   
+    <!-- projectCard end -->
+    
+    
+                <!-- projectCard end -->
+                
+                <!-- projectCard2 start -->
+                <div class="projectCard projectCard2">
+                    <div class="projectTop">
+                        <h2>CRM Development<br><span>Ionics Digital</span></h2>
+                        <div class="projectDots">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                    </div>
+                    <div class="projectProgress">
+                        <div class="process ">
+                            <h2>In Progress</h2>
+                        </div>
+                        <div class="priority blinking-priority1">
+                            <h2>Normal Priority</h2>
+                        </div>
+                    </div>
+                    <div class="groupImg">
+                        <a href="#">
+                            <img src="./images/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg" alt="img1">
+                        </a>
+                        <a href="#" style="--left: -10px;">
+                            <img src="./images/photo-1507003211169-0a1dd7228f2d.jfif" alt="img2">
+                        </a>
+                        <a href="#" style="--left: -20px;">
+                            <img src="./images/photo-1539571696357-5a69c17a67c6.jfif" alt="img3">
+                        </a>
+                        <a href="#" style="--left: -30px;">
+                            <img src="./images/stylish-handsome-indian-man-tshirt-pastel-wall_496169-1571.avif" alt="img4">
+                        </a>
+                        <a href="#" style="--left: -40px;">
+                            <img src="./images/indian-man-smiling-cheerful-expression-closeup-portrait_53876-129387.avif" alt="img5">
+                        </a>
+                        <a href="#" style="--left: -50px;">
+                            <span class="number">+1</span>
+                        </a>
+                    </div>
+                    <div class="task">
+                        <h2>Task Done: <strong id="taskDoneValue">0</strong> / 50</h2>
+                       
+                        <div class="reference-line">
+                            <div class="line-bar" id="lineBar"></div>
+                        </div>
+                    </div>
+                    <div class="due">
+                        <h2>Due Date: 25 August</h2>
+                    </div>
+                </div>
+                <!-- projectCard2 end -->
+                     <!-- myTasks start -->
+                <div class="myTasks">
+                    <!-- tasksHead start -->
+                   <div class="order">
+                    <div class="head">
+                        <h3>Recents Projects</h3>
+                        <span class="material-symbols-outlined">
+                            search
+                            </span>
+                        <span class="material-symbols-outlined">
+                            tune
+                            </span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    User
+                                </th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img  src="./images/photo-1507003211169-0a1dd7228f2d.jfif" alt="">
+                                    <p>David</p>
+
+                                </td>
+                                <td>01-5-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./images/photo-1539571696357-5a69c17a67c6.jfif" alt="">
+                                    <p>Charles</p>
+
+                                </td>
+                                <td>01-5-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./images/stylish-handsome-indian-man-tshirt-pastel-wall_496169-1571.avif" alt="">
+                                    <p>Parvesh</p>
+
+                                </td>
+                                <td>01-5-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./images/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg" alt="">
+                                    <p>Brianca</p>
+
+                                </td>
+                                <td>01-5-2023</td>
+                                <td><span class="status inprocess">In process</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   </div>
+                     
+                   
+                    
+                    <!-- tasks ens -->
+                </div>
+                <!-- myTasks end -->
+                <!-- timeline start -->
+                <div class="timeline">
+                    <div class="sales">
+                        <span class="material-symbols-outlined">
+                            monitoring
+                        </span>
+                        <div class="middle">
+                            <div class="lefts">
+                                <h3>Overall Tasks Completed</h3>
+                                <h1 id="tasksCompleted">0/67</h1>
+                            </div>
+                            <div class="progress">
+                                <svg id="progressCircle">
+                                    <circle cx='38' cy='38' r='36'></circle>
+                                </svg>
+                                <div class="number">
+                                    <p id="progressPercentage">0%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">Last month</small>
+                    </div>
+                </div>
+                <!-- timeline end -->
+                <!-- calendar start -->
+                <div class="calendar">
+                    <!-- calendarHead start -->
+                  <div class="sales-analytics">
+                    <h2>Project Analytics</h2>
+                    <div class="item online">
+                        <div class="icon">
+                            <span class="material-symbols-sharp">
+                                work_history
+                                </span>
+                        </div>
+                        <div class="rights">
+                            <div class="info">
+                               <h4>  Work History</h4>
+                                
+                                <small class="text-muted">Last 24 Hours</small>
+                            </div>
+                            <h5 class="success"> +39%</h5>
+                            <h3>3849</h3>
+                        </div>
+                    </div>
+                    <div class="item offline">
+                        <div class="icon">
+                            <span class="material-symbols-sharp">
+                                work_update
+                                </span>
+                        </div>
+                        <div class="rights">
+                            <div class="info">
+                               <h4>Work Updates</h4>
+                                
+                                <small class="text-muted">Last 24 Hours</small>
+                            </div>
+                            <h5 class="new"> +68%</h5>
+                            <h3>2349</h3>
+                        </div>
+                  </div>
+                    
+                    <div class="item add-product">
+                       <a href="./index2.html">
+                            <div>
+                                <span class="material-symbols-sharp">
+                                    add
+                                    </span>
+                                    <h3>Add Task</h3>
+                            </div>
+                       </a>
+                    </div>
+                </div>
+                  </div>
+                    <!-- calendarData end -->
+                
+                <!-- calendar end -->
+                <!-- messages start -->
+                <div class="messages">
+                    <!-- messagesHead start -->
+                    <div class="messagesHead">
+                        <h2>Messages</h2>
+                    </div>
+                    <!-- messagesHead end -->
+                    <!-- messagesUser start -->
+                    <div class="messagesUser">
+                        <div class="messagesUserImg">
+                            <img src="./images/indian-man-smiling-cheerful-expression-closeup-portrait_53876-129387.avif" alt="img1">
+                        </div>
+                        <h2>Marvin McKinney<br><span>Project Assoiciate</span></h2>
+                    </div>
+                    <!-- messagesUser end -->
+                    <!-- messagesUser start -->
+                    <div class="messagesUser">
+                        <div class="messagesUserImg">
+                            <img src="./images/stylish-handsome-indian-man-tshirt-pastel-wall_496169-1571.avif" alt="img2">
+                        </div>
+                        <h2>Parvesh Pateel <br><span>Project Manager</span></h2>
+                    </div>
+                    <!-- messagesUser end -->
+                    <!-- messagesUser start -->
+                    <div class="messagesUser">
+                        <div class="messagesUserImg">
+                            <img src="./images/photo-1539571696357-5a69c17a67c6.jfif" alt="img3">
+                        </div>
+                        <h2>Charles Cooper<br><span>Project Associate</span></h2>
+                    </div>
+                    <!-- messagesUser end -->
+                    <!-- messagesUser start -->
+                    <div class="messagesUser">
+                        <div class="messagesUserImg">
+                            <img src="./images/closeup-portrait-of-a-charming-girl-over-blue-studio-background-image-free-photo.jpg" alt="img4">
+                        </div>
+                        <h2>Brianca Robertson<br><span>Business Development</span></h2>
+                    </div>
+                    <!-- messagesUser end -->
+                    <!-- messagesUser start -->
+                    <div class="messagesUser">
+                        <div class="messagesUserImg">
+                            <img src="./images/photo-1507003211169-0a1dd7228f2d.jfif" alt="img5">
+                        </div>
+                        <h2>David Watson<br><span>Project Lead</span></h2>
+                    </div>
+                    <!-- messagesUser end -->
+                </div>
+                <!-- messages end -->
+            </main>
+        </div>
+    </div>
+  
+    
+    
+</body>
+<script src="./main.js"></script>
+</html>
